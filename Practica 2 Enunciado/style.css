@@ -1,0 +1,11 @@
+p{
+	text-align: center;
+}
+
+#caja{
+	border: 2px dotted blue;
+	width: 70vw;
+	height: 26vh;
+	margin: 0 auto;
+	padding: 10px;
+}
