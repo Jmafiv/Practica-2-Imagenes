@@ -20,7 +20,7 @@
 			<input type="submit" name="btnEntrar" value="Entrar">
 		</form>
 	</div>
-	<p>NOTA: Si no dispone de identificación o tiene problemas para entrar<br>póngase en contact con el <a href="#" title="administrador">administrador</a> del sitio</p>
+	<p>NOTA: Si no dispone de identificación o tiene problemas para entrar<br>póngase en contacto con el <a href="#" title="administrador">administrador</a> del sitio</p>
 </body>
 </html>
 <?php
