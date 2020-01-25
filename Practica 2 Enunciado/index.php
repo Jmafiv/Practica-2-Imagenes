@@ -8,9 +8,15 @@
 <body>
 	<p>Esta zona tiene el acceso restringido.<br>Para entrar debe identificarse</p>
 	<div id="caja">
-		<form action="gestion.php" method="post">
-			Usuario: <input type="text" name="txtUsuario"><br><br>
-			Clave: <input type="text" name="txtClave"><br><br>
+		<form action="login.php" method="post">
+		<div id="izquierda">
+			Usuario: <br><br>
+			Clave: <br><br>
+		</div>
+		<div id="derecha">
+			<input type="text" name="txtUsuario"><br><br>
+			<input type="text" name="txtClave"><br><br>
+		</div>
 			<input type="submit" name="btnEntrar" value="Entrar">
 		</form>
 	</div>
@@ -18,9 +24,7 @@
 </body>
 </html>
 <?php
-
-
-
-
-
+session_start();
+unset($_SESSION);
+session_destroy();
 ?>

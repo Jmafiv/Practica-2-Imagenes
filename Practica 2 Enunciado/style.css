@@ -5,7 +5,15 @@ p{
 #caja{
 	border: 2px dotted blue;
 	width: 70vw;
-	height: 26vh;
 	margin: 0 auto;
 	padding: 10px;
 }
+#izquierda{
+	float: left;
+	display: inline-block;
+}
+
+#derecha input{
+	margin-left: 20vw;
+}
+
