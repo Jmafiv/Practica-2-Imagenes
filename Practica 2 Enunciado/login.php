@@ -5,9 +5,6 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-</body>
-</html>
 <?php 
 session_start();
 $conexion = mysqli_connect("localhost","root","","lindavista");
@@ -51,3 +48,5 @@ if ($_SESSION["tipo"] == 'Administrador')
 echo "</ul><hr>";
 echo "[ <a href='index.php' title='Desconectar'>Desconectar</a> ]";
 ?>
+</body>
+</html>

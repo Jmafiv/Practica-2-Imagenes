@@ -8,6 +8,17 @@ p{
 	margin: 0 auto;
 	padding: 10px;
 }
+
+#cajaInsertar{
+	border: 2px dotted blue;
+	width: 70vw;
+	padding: 10px;	
+}
+
+#cajaInsertar b{
+	margin-right: 75px;
+}
+
 #izquierda{
 	float: left;
 	display: inline-block;
