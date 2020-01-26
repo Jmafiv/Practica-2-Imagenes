@@ -35,7 +35,7 @@ extract($_POST);
 session_start();
 $conexion = mysqli_connect("localhost","root","","lindavista");
 $conexion->set_charset("utf8");
-$sql = "INSERT INTO noticias (titulo, texto, categoria, fecha) VALUES ('$txtTitulo', '$areaTexto', '$categoria', $fecha)";
+$sql = "INSERT INTO noticias (titulo, texto, categoria, fecha) VALUES ('$txtTitulo', '$areaTexto', '$categoria', '$fecha')";
 
 if ($conexion->query($sql))
 {
