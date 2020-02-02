@@ -31,3 +31,13 @@ p{
 h1{
 	color: blue;
 }
+
+.encabezado{
+	background-color: blue;
+	color: white;
+	text-align: left;
+}
+
+.filas{
+	background-color: lightgray;
+}
