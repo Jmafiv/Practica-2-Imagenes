@@ -11,8 +11,10 @@ session_start();
     <title>Insertar noticia</title>
 </head>
 <body>
-    
+
     <h1>Gestión de noticias</h1>
+    <?php 
+        if($_SESSION["tipo"] == 'Usuario' || $_SESSION["tipo"] == 'Administrador'){?>
     <h2><i>Insertar una nueva noticia</i></h2>
     <div id="cajaInsertar">
     <form action="inserta_noticia_resultado.php" method="post" enctype="multipart/form-data">
@@ -35,6 +37,14 @@ session_start();
     <br>
     [ <a href="login.php">Menu Principal</a> ]
     
+<?php
+    }else{
+?>
+<h2>No tienes privilegios suficientes.</h2>
+<a href="index.php">Iniciar sesión con otra cuenta</a>
+<?php
+}
+?>
 
 </body>
 </html>

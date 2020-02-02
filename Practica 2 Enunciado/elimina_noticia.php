@@ -8,11 +8,12 @@
     <title>Eliminar noticia</title>
 </head>
 <body>
-    
     <h1>Eliminación de noticias</h1>
     <form action="elimina_noticia_seleccionada.php" method="post">
         <?php
             session_start();
+    if ($_SESSION["tipo"] == 'Administrador')
+	{
             $conexion = mysqli_connect("localhost","root","","lindavista");
             $conexion->set_charset("utf8");
             $SQL = "SELECT * FROM noticias";
@@ -45,6 +46,16 @@
         <br>
         <br>
         [ <a href="login.php">Menu Principal</a> ]
+        <?php
+		}
+		else{
+        ?>
+        <h2>No tienes privilegios suficientes.</h2>
+		<a href="index.php">Iniciar sesión con otra cuenta</a>
+
+        <?php
+		}
+        ?>
     </form>
 </body>
 </html>
